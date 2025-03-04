@@ -1,0 +1,124 @@
+.QToolBar {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #cc0011, stop: 1 #871c21);
+    border-color: transparent;
+    margin:0; padding:0;
+}
+
+.QToolBar .QToolButton {
+    background-color: transparent;
+    border-color: transparent;
+    width: 220px;
+    color: #ffffff;
+    border: none;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px;
+}
+
+.QToolBar .QToolButton:checked {
+    background: none;
+    background-color: #7f1a1f;
+    color: #ffffff;
+}
+
+.QToolBar .QToolButton:hover:!checked {
+    background: none;
+    background-color: transparent;
+    border: none;
+}
+
+#WalletFrame {
+    background-color: #ffffff;
+}
+
+#OverviewPage #balancesFrame {
+    background-color: #ffffff;
+}
+
+#OverviewPage #balancesFrame #labelWalletStatus {
+    background: none;
+    border: none;
+}
+
+#OverviewPage #balancesFrame #labelWatchonly {
+    color: #cc0011;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#OverviewPage #balancesFrame #labelSpendable {
+    color: #cc0011;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#OverviewPage #balancesFrame #labelBalances {
+    color: #cc0011;
+    font-size: 16px;
+}
+
+#OverviewPage #balancesFrame #labelBalanceText {
+    color: #cc0011;
+    font-weight: bold;
+}
+
+#OverviewPage #balancesFrame #labelPendingText {
+    color: #cc0011;
+    font-weight: bold;
+}
+
+#OverviewPage #balancesFrame #labelImmatureText {
+    color: #cc0011;
+    font-weight: bold;
+}
+
+#OverviewPage #balancesFrame #labelTotalText {
+    color: #cc0011;
+    font-weight: bold;
+}
+
+#OverviewPage #transactionsFrame {
+    background-color: #ffffff;
+}
+
+#OverviewPage #transactionsFrame #labelTransactionsStatus {
+    background: none;
+    border: none;
+}
+
+#OverviewPage #transactionsFrame #labelTransactions {
+    color: #cc0011;
+    font-size: 16px;
+}
+
+#SendCoinsDialog #frameCoinControl {
+    background-color: #ffffff;
+}
+
+#SendCoinsDialog #frameCoinControl #labelCoinControlFeatures {
+    color: #cc0011;
+}
+
+#SendCoinsDialog #scrollAreaWidgetContents {
+    background-color: #ffffff;
+}
+
+#SendCoinsDialog #frameFee {
+    background-color: #ffffff;
+}
+
+#SendCoinsDialog #frameFee #labelFeeHeadline {
+    color: #cc0011;
+}
+
+#ReceiveCoinsDialog #frameRequest {
+    background-color: #ffffff;
+}
+
+#ReceiveCoinsDialog #frameRequestHistory {
+    background-color: #ffffff;
+}
+
+#ReceiveCoinsDialog #frameRequestHistory #labelRequestedPayments {
+    color: #cc0011;
+}
