@@ -94,8 +94,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].min_activation_height = 0;
 
-        consensus.nMinimumChainWork = uint256S("0x00");
-        consensus.defaultAssumeValid = uint256S("0x00");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000061833cea1d2386");
+        consensus.defaultAssumeValid = uint256S("0x000000000041a55f2f427b5f48fb3ef2ddc30a481eec8db389b1205790b2acf6");
 
         consensus.genesisOutputScriptHex = {0x76,0xa9,0x14,0x01,0x60,0xd4,0x00,0x54,0x5e,0x14,0xa1,0xde,0x78,0xe2,0x55,0xc4,0xf3,0xdb,0xe9,0x0d,0xa6,0x49,0xbf,0x88,0xac};
 
@@ -141,6 +141,10 @@ public:
         checkpointData = {
             {
                 { 0, uint256S("0x0008c73af1e55a1a04b613763480876d72c004386746016824c5b9a8c357233b")},
+                { 50, uint256S("0x0000000d7f19a61d2f6bebed2eb6922cbfe42a593a731fc04917780ba60389f5")},
+                { 500, uint256S("0x0000000000bfc030b34afe9b51fceddc0813849f6f05c1478c1ee4ab24389dcb")},
+                { 5000, uint256S("0x00000000004991df27265f6aaf773a39cac46951440390a2d0fd56e3bf1a70ed")},
+                { 17000, uint256S("0x000000000041a55f2f427b5f48fb3ef2ddc30a481eec8db389b1205790b2acf6")}
             }
         };
 
@@ -149,9 +153,9 @@ public:
         };
 
         chainTxData = ChainTxData{
-            .nTime    = 1740441600,
-            .nTxCount = 1,
-            .dTxRate  = 0
+            .nTime    = 1742373341,
+            .nTxCount = 1748,
+            .dTxRate  = 1
         };
     }
 };
@@ -184,8 +188,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].min_activation_height = 0;
 
-        consensus.nMinimumChainWork = uint256S("0x00");
-        consensus.defaultAssumeValid = uint256S("0x00");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000001745");
+        consensus.defaultAssumeValid = uint256S("0x0006b66c451f2f7eb07d0c5353af869df719b1ba6680d44f774e55a836bae85c");
 
         consensus.genesisOutputScriptHex = {0x76,0xa9,0x14,0x9d,0x64,0x04,0x17,0x4b,0x52,0xce,0x9f,0x89,0x77,0x01,0x4a,0xb2,0xd9,0x07,0x9b,0xa1,0xdd,0xcd,0xe8,0x88,0xac};
 
@@ -279,8 +283,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].min_activation_height = 0;
 
-        consensus.nMinimumChainWork = uint256S("0x00");
-        consensus.defaultAssumeValid = uint256S("0x00");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000002");
+        consensus.defaultAssumeValid = uint256S("0x309071542add6a219c79f3e740407ffd6df2a31c55d34f3fbc4954dd486fddb0");
 
         consensus.genesisOutputScriptHex = {0x76,0xa9,0x14,0x7f,0x2a,0xc5,0xc1,0x08,0x44,0x21,0xd9,0xc3,0xdd,0xbd,0x81,0x38,0xe5,0x4d,0xae,0x1e,0xbd,0xe9,0x6a,0x88,0xac};
 
