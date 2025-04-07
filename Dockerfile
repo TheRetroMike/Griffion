@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 RUN apt-get update -y
-RUN apt-get install wget build-essential install libminiupnpc-dev libnatpmp-dev unzip -y
+RUN apt-get install wget build-essential libminiupnpc-dev libnatpmp-dev unzip -y
 WORKDIR /opt/
 RUN wget https://github.com/GriffionProject/Griffion/releases/download/v27.02/griffion-v27.2-ubuntu-22.04.zip
 RUN unzip griffion-v27.2-ubuntu-22.04.zip
