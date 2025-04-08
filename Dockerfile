@@ -4,8 +4,8 @@ RUN apt-get install wget build-essential libtool autotools-dev automake pkg-conf
 WORKDIR /opt/
 RUN git clone https://github.com/GriffionProject/Griffion.git
 RUN cd Griffion
-RUN ./autogen.sh
-RUN ./configure
+RUN autogen.sh
+RUN configure
 RUN make check
 RUN mv src/griffiond /usr/bin
 RUN mv src/griffion-cli /usr/bin
