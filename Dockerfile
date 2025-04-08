@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 RUN apt-get update -y
-RUN apt-get install wget build-essential libtool autotools-dev automake pkg-config bsdmainutils python3 libevent-dev libboost-dev libsqlite3-dev libminiupnpc-dev libnatpmp-dev libzmq3-dev systemtap-sdt-dev unzip git -y
+RUN apt-get install wget build-essential libtool autotools-dev automake pkg-config bsdmainutils python3 libevent-dev libboost-dev libsqlite3-dev libminiupnpc-dev libnatpmp-dev libzmq3-dev systemtap-sdt-dev libdb++-dev unzip git -y
 WORKDIR /opt/
 RUN git clone https://github.com/GriffionProject/Griffion.git
 #RUN cd Griffion
