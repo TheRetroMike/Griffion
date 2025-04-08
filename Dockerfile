@@ -3,10 +3,11 @@ RUN apt-get update -y
 RUN apt-get install wget build-essential libtool autotools-dev automake pkg-config bsdmainutils python3 libevent-dev libboost-dev libsqlite3-dev libminiupnpc-dev libnatpmp-dev libzmq3-dev systemtap-sdt-dev unzip git -y
 WORKDIR /opt/
 RUN git clone https://github.com/GriffionProject/Griffion.git
-RUN cd Griffion
-RUN autogen.sh
-RUN configure
-RUN make check
+#RUN cd Griffion
+WORKDIR /opt/Griffion
+RUN ./autogen.sh
+RUN ./configure --with-incompatible-bdb
+RUN make -j$(nproc)
 RUN mv src/griffiond /usr/bin
 RUN mv src/griffion-cli /usr/bin
 #RUN wget https://github.com/GriffionProject/Griffion/releases/download/v27.02/griffion-v27.2-ubuntu-22.04.zip
